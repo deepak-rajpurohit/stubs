@@ -17,4 +17,8 @@ class UserModel extends Model
     function getPhoneAttribute($val){
         return "+91-".$val;
     }
+
+    function setNameAttribute($val){
+        $this->attributes['name']=ucfirst($val);
+    }
 }

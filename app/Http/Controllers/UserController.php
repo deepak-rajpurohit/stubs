@@ -15,4 +15,15 @@ class UserController extends Controller
     function list(){
         return UserModel::all();
     }
+
+    function save(){
+        $user = new UserModel();
+        $user->name='rahul';
+        $user->email='rahual@email.com';
+        $user->phone='123456';
+
+        if($user->save()){
+            echo "new user added";
+        }
+    }
 }

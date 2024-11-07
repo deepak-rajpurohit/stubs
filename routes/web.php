@@ -9,3 +9,4 @@ Route::get('/', function () {
 });
 
 Route::get('list',[UserController::class,'list']);
+Route::get('user',[UserController::class,'save']);
